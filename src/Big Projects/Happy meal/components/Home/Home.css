@@ -1,0 +1,116 @@
+body{
+  animation-name: no;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  /* transition: s linear ease-in-out; */
+  /* transform: 3s; */
+}
+@keyframes no{
+0%{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,65,1) 43%, rgba(0,212,255,1) 100%);
+  
+  
+  }
+  25%{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,65,1) 15%, rgba(0,212,255,1) 100%);
+  }
+  50%{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,9,121,1) 67%, rgba(0,212,255,1) 100%);
+  }
+  75%{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,121,9,1) 20%, rgba(0,212,255,1) 100%);
+  }
+  100%{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,208,1) 100%);
+
+  }
+}
+
+.Section{
+    background:url("./imgs/home.jpg") no-repeat center;
+min-height:100vh;
+background-size:cover;
+position:relative;
+}
+.content{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    color:#fff;
+    gap:1.2rem;
+    margin-top:5rem;
+    padding-left:15rem;
+  }
+  .title.h1{
+    font-size: 5rem;
+    line-height: 5.3rem;
+  }
+  .subtitle .p{
+    width: 70%;
+    margin-bottom: 5.3rem;
+    font-size:"3rem";
+    color:"#d59a9a";
+    margin:"3";
+  }
+  .info{
+ 
+   position: absolute;
+    bottom: 0rem;
+    right: 0;
+    padding: 4rem;
+    background-color: aqua;
+    background-color:rgba(255,255,255,0.5);
+    color: black;
+  }
+  @media only screen and (max-width: 600px) and (min-width:200px ) {
+   .info {
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    font-size: medium;
+    }
+    .content{
+      /* background-color: aquamarine; */
+      width:fit-content;
+      /* text-align: center; */
+      margin: 2px;
+    }
+    .m{
+      margin: 0px;
+    }
+    .title{
+      top:1rem;
+      overflow: hidden;
+      /* position: absolute; */
+      position: relative;
+      right: 6rem;
+    }.subtitle{
+      top: 3rem;
+      position: relative;
+      /* position: absolute; */
+      right: 6rem;
+    }
+      }
+      .col{
+        animation-name: dur;
+        animation-duration: 5s;
+        /* background-color: red; */
+        transition: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes dur {
+        0%   {color: red;}
+        25%  {color: yellow;}
+        50%  {color: blue;}
+        100% {color: green;}
+    }

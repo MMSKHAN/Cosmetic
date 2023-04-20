@@ -1,0 +1,56 @@
+.parentcon{
+    position: relative;
+    /* height: 7rem; */
+    right: 257px;
+    bottom: -415px;
+}
+.tetleed{
+    overflow: hidden;
+    position: absolute;
+    transform: translateX(30%) translateY(-20vw) rotate(-90deg);
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#d59a9a
+}
+.name, .email,.message{
+    border-bottom: 2px solid #d59a9a;
+    color: red;
+    /* width: 14px; */
+    width: 13rem;
+}
+.name input,.message textarea {
+    border: none;
+}
+.email input{
+    border: none;
+}.bt{
+    cursor: pointer;
+    border: 2px solid #d59a9a;
+    width: 13rem;
+    padding: 2px;
+    text-align: center;
+    color: #e48282;
+    font-size: small;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 600px){
+    .tetleed{
+        overflow: hidden;
+        /* position: absolute; */
+        transform: rotateY(45deg);
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        color:#d59a9a
+    }
+    .parentcon{
+        right: -25px;
+        top: 1px;
+        display: flex;
+        justify-content: center;
+    }textarea{
+        width: 13rem;
+    }
+
+}

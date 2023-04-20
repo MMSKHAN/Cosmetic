@@ -1,0 +1,103 @@
+.main{
+    height: 100vh;
+
+}
+.circles{
+    position: relative;
+}
+.circle1,.circle2{
+    background-color: rgb(145, 103, 145);
+    height: 13rem;
+    width: 13rem;
+    border-radius: 8rem;
+    opacity: 0.5;
+}
+.circle1{
+    left: -91px;
+    top: -45px;
+    position: absolute;
+}
+.circle2{
+right: -80px;
+bottom: -80px;
+position: absolute;
+}
+.parentprice{
+    position: relative;
+    /* height: 7rem; */
+    right: 251px;
+    bottom: -415px;
+}
+.tetle{
+    overflow: hidden;
+    position: absolute;
+    transform: translateX(30%) translateY(-20vw) rotate(-90deg);
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#d59a9a
+}
+.cut{
+    text-decoration-line: line-through;
+}
+.header h6{
+    font-size: 1rem;
+    font-weight: inherit;
+    opacity: .5;
+}
+.header h1{
+    font-size: x-large;
+    font-weight: 800;
+    font-family: auto
+}
+.header {
+    margin-left: 65px;
+}
+.pri{
+    display: flex;
+    background-color: black;
+    border-radius: 19rem;
+    color: white;
+    height: 9rem;
+    width: 10rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.bodycard{
+    margin-top: 25px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.bor{
+    border-right: 3px solid black;
+}
+@media only screen and (max-width:600px) {
+    .colum{
+        text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .bor{
+        border:none;
+    }
+}
+.circle1{
+    animation-name: durer;
+    animation-duration: 5s;
+    /* background-color: red; */
+    transition: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes durer {
+    0%   {color: aqua;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    125% {color: orange;}
+}

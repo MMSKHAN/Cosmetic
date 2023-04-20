@@ -1,0 +1,64 @@
+.responsive{
+    width: 100%;
+    height: 30vh;
+    border-radius: 3rem ;
+}
+.responsive :nth-of-type(2){
+    background-color: black;
+}
+.parent{
+    position: relative;
+    /* height: 7rem; */
+    right: 225px;
+    bottom: -415px;
+}
+
+.tetle{
+    overflow: hidden;
+    position: absolute;
+    transform: translateX(30%) translateY(-20vw) rotate(-90deg);
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#d59a9a
+}
+.big img{
+    width: 100%;}
+@media only screen and (max-width: 600px){
+    .tetle{
+        overflow: hidden;
+        /* position: absolute; */
+        transform: rotateY(45deg);
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        color:#d59a9a
+    }
+    .parent{
+        right: 6px;
+        top: -36px;
+        display: flex;
+        justify-content: center
+    }.big img{
+        width: 100%;
+    }.center{
+        text-align: center;
+    }
+}
+.cole{
+    animation-name: dure;
+    animation-duration: 5s;
+    /* background-color: red; */
+    transition: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes dure {
+    0%   {color: green}
+    25%  {color: blue}
+    50%  {color: greenyellow;}
+    100% {color: red}
+}
+.butgra{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+
+}
